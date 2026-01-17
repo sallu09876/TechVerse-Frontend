@@ -1,0 +1,22 @@
+.product-list-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #17a2b8;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}

@@ -1,0 +1,36 @@
+.card {
+  border-radius: 12px;
+}
+
+button {
+  font-weight: 500;
+}
+/* Hide table on mobile */
+@media (max-width: 768px) {
+  .checkout-table {
+    display: none;
+  }
+}
+
+/* Hide cards on desktop */
+@media (min-width: 769px) {
+  .checkout-cards {
+    display: none;
+  }
+}
+
+/* Product image */
+.checkout-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Mobile card image */
+.checkout-img-lg {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  cursor: pointer;
+}

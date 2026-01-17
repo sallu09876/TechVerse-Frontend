@@ -1,0 +1,19 @@
+.products-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.products-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.search-bar input:focus {
+  box-shadow: none;
+  border-color: #17a2b8;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}

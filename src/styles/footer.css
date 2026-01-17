@@ -1,0 +1,42 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer a,
+.footer .footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer a:hover,
+.footer .footer-link:hover {
+  color: #17a2b8; /* Bootstrap info color */
+}
+
+.footer-brand {
+  font-weight: bold;
+}
+
+.footer-brand span {
+  color: #17a2b8;
+}
+
+.footer hr {
+  border-color: #444;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .footer .mb-3 {
+    text-align: center;
+  }
+  .footer .footer-link {
+    text-align: center;
+  }
+}
