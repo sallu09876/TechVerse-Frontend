@@ -6,7 +6,7 @@
 
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
 
@@ -34,9 +34,5 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0"
-  },
-
-  "engines": {
-    "node": "20.x"
   }
 }
