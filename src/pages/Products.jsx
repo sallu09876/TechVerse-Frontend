@@ -10,15 +10,26 @@ function Products() {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const category = searchParams.get("category"); // get category from URL
+    const decodedCategory = category ? decodeURIComponent(category) : null; // decode category
 
     const [query, setQuery] = useState("");
 
     // Filter products by category and search query
+    // const filtered = products.filter((p) => {
+    //     const matchCategory = category ? p.category === category : true;
+    //     const matchQuery = p.name.toLowerCase().includes(query.toLowerCase());
+    //     return matchCategory && matchQuery;
+    // });
     const filtered = products.filter((p) => {
-        const matchCategory = category ? p.category === category : true;
+        const matchCategory = decodedCategory
+            ? p.category.toLowerCase() === decodedCategory.toLowerCase()
+            : true;
+
         const matchQuery = p.name.toLowerCase().includes(query.toLowerCase());
+
         return matchCategory && matchQuery;
     });
+
 
     return (
         <Container className="mt-4">

@@ -33,15 +33,14 @@ function NavbarComponent() {
                 {categories.map((cat) => (
                   <NavDropdown.Item
                     as={Link}
-                    to={`/products?category=${cat.name}`}
+                    to={`/products?category=${encodeURIComponent(cat.name)}`}
                     key={cat.id}
-                    // eslint-disable-next-line no-undef
-                    onClick={() => handleCategoryClick(cat.name)}
                   >
                     {cat.name}
                   </NavDropdown.Item>
                 ))}
               </NavDropdown>
+
               <NavLink to="/orders" className="nav-btn">My Orders</NavLink>
             </Nav>
 
